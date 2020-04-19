@@ -1,0 +1,88 @@
+
+  <div class="d-flex" id="wrapper">
+    <!-- Sidebar -->
+    <div class="border-right" id="sidebar-wrapper">
+      <h5 id="rot">Mahindra Annual Supplier Meet, Sydney 2020</h5>
+      <div class="main-logo">
+        <a href="#"><img src="../../assets/images/SuppPub.png"></a>
+      </div>
+      <div class="list-group list-group-flush p-custom position-relative">
+        <div class="d-inline position-absolute right_0">
+          <a   routerLinkActive="active-link" (click)="gotoRoute('sydney')" class="list-group-item list-group-item-action bg-transparent d-inline sidetabs mb-1">
+            <img src="../../assets/images/LocationIcon.svg"><span class="pl-3">Sydney</span></a><br>
+          <a  routerLinkActive="active-link"  (click)="gotoRoute('conference')" class="list-group-item list-group-item-action bg-transparent d-inline sidetabs mb-1">
+            <img src="../../assets/images/conferenceIcon.svg"><span class="pl-3">Conference</span></a><br>
+          <a routerLink="registration" routerLinkActive="active-link" class="list-group-item list-group-item-action bg-transparent d-inline sidetabs mb-1">
+            <img src="../../assets/images/registrationicon.svg"><span class="pl-3">Registration</span></a><br>
+          <a routerLink="contact" routerLinkActive="active-link" class="list-group-item list-group-item-action bg-transparent d-inline sidetabs mb-1">
+            <img src="../../assets/images/contacticon.svg"><span class="pl-3">Contact</span></a><br>
+        </div>
+        
+      </div>
+    </div>
+    <!-- /#sidebar-wrapper routerLink="sydney" -->
+
+    <!-- Page Content -->
+    <div id="page-content-wrapper">
+      <div class="topnav-img">
+        <div class="togglebtn">
+          <button class="btn btn-primary" id="menu-toggle">Side Menu</button>
+        </div>
+        <div class="waves">
+          <img src=".../../../../assets/images/Innerpagewave.png" class="waveImg">
+        </div>
+      </div>
+
+
+<div class="content-div">
+  <nav class="navbar navbar-expand-lg border-bottom fixed_nav p-0 back_white">
+    <button class="navbar-toggler bg-dark" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <!-- <div class="d-flex justify-content-around bg-secondary mb-3">
+              <div class="p-2 bg-info"><a>Flex item 1</a></div>
+              <div class="p-2 bg-warning">Flex item 2</div>
+              <div class="p-2 bg-primary">Flex item 3</div>
+            </div> -->
+
+
+      <ul class="navbar-nav d-md-flex justify-content-between w-100">
+        <li class="nav-item active">
+          <a class="nav-link pr-2 pt-0 pl-2 pb-2" routerLink="aboutSydney" routerLinkActive="active-link">About
+            Sydney</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link  pr-2 pt-0 pl-2 pb-2" routerLink="sydneyNightLife" routerLinkActive="active-link">Sydney Night Life</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link  pr-2 pt-0 pl-2 pb-2" routerLink="placeToEat" routerLinkActive="active-link">Place to Eat</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link pr-2 pt-0 pl-2 pb-2" routerLink="placeToShop" routerLinkActive="active-link">Places to Shop</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link pr-2 pt-0 pl-2 pb-2" routerLink="placeToVisit" routerLinkActive="active-link">Places to Visit</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link pr-2 pt-0 pl-2 pb-2" routerLink="tipsDuringStay" routerLinkActive="active-link">Tips During Stay</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link pr-2 pt-0 pl-2 pb-2" routerLink="dosandDonts" routerLinkActive="active-link">Do's and Don'ts</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <div style="margin-top: 20px;">
+    <router-outlet></router-outlet>
+
+  </div>
+
+</div>
+      <!-- /#page-content-wrapper -->
+    </div>
+  </div>

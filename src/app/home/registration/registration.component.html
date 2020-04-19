@@ -1,0 +1,256 @@
+
+  <div class="d-flex" id="wrapper">
+    <!-- Sidebar -->
+    <div class="border-right" id="sidebar-wrapper">
+      <h5 id="rot">Mahindra Annual Supplier Meet, Sydney 2020</h5>
+      <div class="main-logo">
+        <a href="#"><img src="../../assets/images/SuppPub.png"></a>
+      </div>
+      <div class="list-group list-group-flush p-custom position-relative">
+        <div class="d-inline position-absolute right_0">
+          <a   routerLinkActive="active-link" (click)="gotoRoute('sydney')" class="list-group-item list-group-item-action bg-transparent d-inline sidetabs mb-1">
+            <img src="../../assets/images/LocationIcon.svg"><span class="pl-3">Sydney</span></a><br>
+          <a  routerLinkActive="active-link"  (click)="gotoRoute('conference')" class="list-group-item list-group-item-action bg-transparent d-inline sidetabs mb-1">
+            <img src="../../assets/images/conferenceIcon.svg"><span class="pl-3">Conference</span></a><br>
+          <a routerLink="registration" routerLinkActive="active-link" class="list-group-item list-group-item-action bg-transparent d-inline sidetabs mb-1">
+            <img src="../../assets/images/registrationicon.svg"><span class="pl-3">Registration</span></a><br>
+          <a routerLink="contact" routerLinkActive="active-link" class="list-group-item list-group-item-action bg-transparent d-inline sidetabs mb-1">
+            <img src="../../assets/images/contacticon.svg"><span class="pl-3">Contact</span></a><br>
+        </div>
+        
+      </div>
+    </div>
+    <!-- /#sidebar-wrapper routerLink="sydney" -->
+
+    <!-- Page Content -->
+    <div id="page-content-wrapper">
+      <div class="topnav-img">
+        <div class="togglebtn">
+          <button class="btn btn-primary" id="menu-toggle">Side Menu</button>
+        </div>
+        <div class="waves">
+          <img src=".../../../../assets/images/Innerpagewave.png" class="waveImg">
+        </div>
+      </div>
+
+
+
+<div class="content-div">
+    <nav class="navbar navbar-expand-lg border-bottom fixed_nav p-0 back_white">
+        <button class="navbar-toggler bg-dark" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent" style="margin-top:-32px;">
+            <ul class="navbar-nav d-md-flex justify-content-between w-50">
+                <li class="nav-item active">
+                    <a class="nav-link pr-2 pt-0 pl-2 pb-2 active-link"  routerLinkActive="active-link">
+                        <strong>MC Profile Registration</strong>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="col-md-12">
+        <div>
+            <h5 style="margin-top: 6px; margin-bottom: 0px;"><strong>Dear Sir / Madam</strong></h5>
+            <p style="font-size: medium; color: #B2B2B2;" >Request you to proide us with the personal information, as per fields mentioned below. The
+                information you will provide
+                will be kept strictly confidential & will only be used to serve you better.
+            </p>
+        </div>
+    </div>
+    <!-- multistep form -->
+    <div class="position-relative">
+        <form id="msform" class="pt-5" style="margin-top: -66px; margin-left: -55px;">
+            <!-- progressbar -->
+            <ul id="progressbar">
+                <li class="active"> Personal Details</li>
+                <li>Conference Preferences and Details </li>
+                <li> Passport and Visa Details</li>
+            </ul>
+
+            <fieldset class="form-group">
+                <div class="row" >
+
+                    <div class="col-md-6" >
+                        <div class="form-group text-right mb-0">
+                            <label for="name">Name:</label>
+                            <input type="text" class="form-control name d-inline cst-input" id="name" name="name">
+                        </div>
+                        <div class="form-group text-right mb-0">
+                            <label for="email">Designation:</label>
+                            <input type="email" class="form-control email d-inline cst-input" id="email" name="email">
+                        </div>
+                        <div class="form-group text-right mb-0">
+                            <label for="mobileNo">Mobile No:</label>
+                            <input type="mobileNo" class="form-control mobileNo d-inline cst-input" id="mobileNo" name="mobileNo">
+                        </div>
+                        <div class="form-group text-right mb-0">
+                            <label for="emergencyNo">Emergency:</label>
+                            <input type="emergencyNo" class="form-control emergencyNo d-inline cst-input" id="emergencyNo" name="emergencyNo">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group text-right mb-0">
+                            <label for="hotel">Hotel:</label>
+                            <input type="text" class="form-control hotel d-inline cst-input" id="hotel"
+                                 name="hotel">
+                        </div>
+                        <div class="form-group text-right mb-0">
+                            <label for="organisation">Organisation:</label>
+                            <input type="text" class="form-control organisation d-inline cst-input" id="organisation"
+                                name="organisation">
+                        </div>
+                        <div class="form-group text-right mb-0">
+                            <label for="phoneNo">Phone No:</label>
+                            <input type="number" class="form-control phoneNo d-inline cst-input" id="phoneNo"
+                                 name="phoneNo">
+                        </div>
+                        <div class="form-group text-right mb-0">
+                            <label for="email">Email:</label>
+                            <input type="email" class="form-control email d-inline cst-input" id="email"
+                                 name="email">
+                        </div>
+                        <div class="form-group text-right mr-5 mb-0">
+                            <label for="ageGroup">Age Group:</label>&nbsp;&nbsp;
+                            <input type="radio" name="new-england-states" value="ri">25-35&nbsp;&nbsp;&nbsp;
+                            <input type="radio" name="new-england-states" value="ri">36-45&nbsp;&nbsp;&nbsp;
+                            <input type="radio" name="new-england-states" value="ri">46-55&nbsp;&nbsp;&nbsp;
+                            <input type="radio" name="new-england-states" value="ri">56-65&nbsp;&nbsp;&nbsp;
+                            <input type="radio" name="new-england-states" value="ri">Others
+                            
+                        </div>
+                    </div>
+                </div>
+                <input type="button" name="next" class="btn next action-button btn-block col-md-3 continue"
+                    value="Continue" />
+            </fieldset>
+            <!-- User's Preferences  -->
+            <fieldset class="form-group">
+                <div class="row">
+
+                   
+                    <div class="col-md-4 vert_line position-relative">
+                        <div class="row">
+                            <h5 >Room Requirement</h5><br>
+                        <div class="col-sm-3" class="form-check">
+                            <input class="form-check-input" type="radio" name="preferences" id="single"
+                                value="single">
+                            <label class="form-check-label" for="single">Single</label>
+                        </div>
+                        <div class="col-sm-3" class="form-check">
+                            <input class="form-check-input" type="radio" name="preferences" id="double"
+                                value="double">
+                            <label class="form-check-label" for="double">Double</label>
+                        </div>
+                    </div>
+                        </div>
+                 
+
+                    <div class="col-md-4 vert_line position-relative">
+                        <h5>Food Preference</h5>
+                        <div class="col-sm-6" class="form-check">
+                            <input class="form-check-input" type="radio" name="preferences" id="vegetarian"
+                                value="vegetarian">
+                            <label class="form-check-label" for="vegetarian">Vegetarian</label>
+                        </div>
+                        <div class="col-sm-6" class="form-check">
+                            <input class="form-check-input" type="radio" name="preferences" id="nonvegetarian"
+                                value="nonvegetarian">
+                            <label class="form-check-label" for="nonvegetarian">Non Vegetarian</label>
+                        </div>
+                        
+                    </div>
+                    <div class="col-md-4 vert_line position-relative">
+                      <div class="row">
+                        <h5>Liquor</h5>
+                        <div class="col-sm-2" class="form-check">
+                            <input class="form-check-input" type="radio" name="preferences" id="whisky"
+                                value="whisky">
+                            <label class="form-check-label" for="daily">Whisky</label><br>
+                            <input class="form-check-input" type="radio" name="preferences" id="whisky"
+                                value="whisky">
+                            <label class="form-check-label" for="daily">Whisky</label><br>
+                            <input class="form-check-input" type="radio" name="preferences" id="whisky"
+                                value="whisky">
+                            <label class="form-check-label" for="daily">Whisky</label>
+                        </div>
+                        <div class="col-sm-2" class="form-check">
+                            <input class="form-check-input" type="radio" name="preferences" id="beer"
+                                value="beer">
+                            <label class="form-check-label" for="weekly">Vodka</label><br>
+                            <input class="form-check-input" type="radio" name="preferences" id="beer"
+                                value="beer">
+                            <label class="form-check-label" for="weekly">Vodka</label>
+                        </div>
+                        <div class="col-sm-2" class="form-check">
+                            <input class="form-check-input" type="radio" name="preferences" id="teetotaler"
+                                value="teetotaler">
+                            <label class="form-check-label" for="weekly">Bacardi</label>
+                            
+                        </div>
+                      </div>                        
+                    </div>
+                </div>
+                <span type="button" name="previous" class="previous mt-4 back"><span><i
+                            class='fas fa-arrow-left left_arrow mr-2'></i>Back</span></span>
+                <!-- <input type="button" name="previous" class="previous action-button" value="Previous" /> -->
+                <input type="button" name="next" class="btn next action-button btn-block col-md-3 continue"
+                    value="Continue" />
+            </fieldset>
+            <fieldset class="form-group">
+                <div class="row">
+
+                    <div class="col-md-6" >
+                        <div class="form-group text-right mb-0">
+                            <label for="passportNo">Passport No.</label>
+                            <input type="text" class="form-control passportNo d-inline cst-input" id="passportNo" name="passportNo">
+                        </div>
+                        <div class="form-group text-right mb-0">
+                            <label for="dob">Date Of Birth:</label>
+                            <input type="date" class="form-control dob d-inline cst-input" id="dob" name="dob">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group text-right mb-0">
+                            <label for="hotel">Nationality:</label>
+                            <input type="text" class="form-control hotel d-inline cst-input" id="hotel"
+                                 name="hotel">
+                        </div>
+                        <div class="form-group text-right mr-5 mb-0">
+                            <label for="ageGroup">Visa:</label>&nbsp;&nbsp;
+                            <input type="radio" name="new-england-states" value="ri">Yes
+                            <input type="radio" name="new-england-states" value="ri">No
+                        </div>
+                       
+                    </div>
+                   
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="form-group text-left mr-5 mb-0">
+                            <h5 style="color: #F4B1B9;">Note:</h5>
+                            <p style="font-size: small; color: #B2B2B2;">Please note: One on One session on 30th May starts at 0900 hours and the main conference on 31st May starts at 1200hours. One on One session on 1st June
+                                starts at 0900 hours untill 1830 hours. The check-in time at the hotel is 1500hours, rooms will not be available prior to that in case you are arriving before 1500
+                                hours, we would strongly recommend pre-booking your room (Room will be booked from prior day).
+                            </p>
+                        </div>
+                     
+                    </div>
+                </div>
+                <span type="button" name="previous" class="previous mt-4 back"><i
+                        class='fas fa-arrow-left left_arrow mr-2'></i>back</span>
+                <input type="submit" name="submit" class="btn submit action-button btn-block col-md-3 continue"
+                    value="Register Now" />
+            </fieldset>
+        </form>
+    </div>
+</div>
+
+
+</div>
+</div>
